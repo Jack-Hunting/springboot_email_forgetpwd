@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/emailController/toModifyPwd" method="post">
+    <input type="hidden" name="username" th:value="${username}"/>
+    <input type="text" name="password" placeholder="请输入新的密码"/><br/>
+    <input type="submit" value="确认修改"/>
+</form>
+</body>
+</html>
